@@ -15,7 +15,11 @@
 */
 
 //Code here
-
+var me = {
+name: 'Douglas Caswell',
+age: 27
+};
+alert(me.name);
 
 
 ////////// PROBLEM 2 //////////
@@ -26,7 +30,14 @@
 */
 
 //Code here
-
+var favoriteThings = {
+  band: "Funkey Panda",
+  food: "Something I haven't tried yet",
+  person: "My wife, Amanda",
+  book: "The HitchHiker's Guide to the Galaxy",
+  movie: "Patema Inverted",
+  holiday: "Labor Day"
+}
 
 
 /*
@@ -34,7 +45,8 @@
 */
 
 //Code here
-
+favoriteThings.car = "Whatever's Cheap and Reliable";
+favoriteThings.brand = "NA";
 
 
 /*
@@ -42,7 +54,8 @@
 */
 
 //Code here
-
+favoriteThings.food = "Chicken Nuggets";
+favoriteThings.book = "Harry Potter";
 
 
 ////////// PROBLEM 3 //////////
@@ -56,7 +69,11 @@
 */
 
 //Code here
-
+var backPack = {};
+var item = "firstPocket";
+backPack.firstPocket = item;
+backPack.firstPocket = "chapstick";
+backPack.color = "Black";
 
 
 /*
@@ -64,7 +81,7 @@
 */
 
 //Code here
-
+alert(backPack);
 
 
 /*
@@ -74,7 +91,7 @@ Instead, console.log your whole backPack object and then check out the console.
 */
 
 //Code here
-
+console.log(backPack);
 
 
 ////////// PROBLEM 4 //////////
@@ -97,7 +114,8 @@ var user2 = {
 */
 
 //Code Here
-
+user2.name = 'Tyler S. McGinnis';
+user2.email = 'tyler.mcginnis@devmounta.in';
 
 
 
@@ -120,6 +138,7 @@ var user2 = {
 */
 
 //Code Here
+var methodCollection = {};
 
 
 
@@ -129,7 +148,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello = () => alert("hello");
+methodCollection.logHello = () => console.log('hello');
 
 
 /*
@@ -137,7 +157,8 @@ var user2 = {
 */
 
 //Code Here
-
+methodCollection.alertHello();
+methodCollection.logHello();
 
 
 ////////// PROBLEM 6 //////////
@@ -148,7 +169,13 @@ var user2 = {
 */
 
 //Code Here
-
+function makePerson (name_, birthday_, ssn_) {
+  return {
+    name: name_,
+    birthday: birthday_,
+    ssn: ssn_
+  }
+};
 
 
 ////////// PROBLEM 7 //////////
@@ -159,5 +186,11 @@ var user2 = {
 */
 
 //Code Here
-
+function makeCard (cardNumber_, expirationDate_, securityCode_) {
+  return {
+    cardNumber: cardNumber_,
+    expirationDate: expirationDate_,
+    securityCode: securityCode_
+  }
+};
 
